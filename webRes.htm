@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>responsive</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            .container {
+                /* height: 730px;
+        width: 521px; */
+                background-color: rgb(38, 34, 34);
+                border: 2px solid black;
+                text-align: center;
+                display: grid;
+                gap: 2px;
+                justify-content: center;
+                grid-template-rows: 30vh 50vh 20vh;
+                grid-template-columns: 30vw 50vw 20vw;
+                /* grid-area: header; */
+                grid-template-areas: "header header header"
+                    "sidebar main main"
+                    " sidebar section content"
+                    "footer footer footer";
+            }
+
+            header {
+                color: white;
+                background-color: yellow;
+                grid-area: header;
+                text-align: center;
+            }
+
+            .sidebar {
+                color: white;
+                background-color: rgb(118, 244, 198);
+                grid-area: sidebar;
+                text-align: center;
+            }
+
+            main {
+                color: white;
+                background-color: rgb(247, 6, 46);
+                grid-area: main;
+                text-align: center;
+            }
+
+            section {
+                color: white;
+                background-color: rgb(38, 38, 115);
+                grid-area: section;
+                text-align: center;
+            }
+
+            .content {
+                color: white;
+                background-color: rgb(203, 48, 92);
+                gap: 2px;
+                grid-area: content;
+                text-align: center;
+            }
+
+            footer {
+                color: white;
+                background-color: rgb(25, 210, 234);
+                grid-area: footer;
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <header> header </header>
+            <div class="sidebar">sidebar</div>
+
+            <main>
+                main
+            </main>
+            <section>
+                section
+            </section>
+            <div class="content">
+                content
+            </div>
+            <footer>
+                footer
+            </footer>
+        </div>
+    </body>
+
+</html>
