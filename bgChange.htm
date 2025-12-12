@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bestUseEvents</title>
+    <style>
+    button{
+        color: white;
+        background-color: rgb(22, 238, 22);
+        border: 1px solid green;
+        border-radius:12px;
+        padding:  12px 22px;
+    }
+    </style>
+</head>
+<body>
+    
+    <H1>vikas prajapati</H1>
+    <button class="chng">Magic</button>
+
+
+<script>
+let magicBtn = document.querySelector(".chng");
+console.log(magicBtn);
+
+let body = document.querySelector("body");
+//logic
+let currentMode = "light";
+magicBtn.addEventListener("click",() =>{
+    if(currentMode === "dark"){
+       currentMode = "light";
+       body.style.backgroundColor = "black";
+       body.style.color = "white";
+    }else{
+        currentMode = "dark";
+       body.style.backgroundColor = "white";
+       body.style.color = "black";
+    }
+    console.log(currentMode);
+});
+</script>
+</body>
+</html>
