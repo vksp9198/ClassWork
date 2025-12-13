@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>mouse over Event</title>
+        <style>
+            img {
+                border: 2px solid black;
+                border-radius: 12px;
+                margin: 0px 644px;
+            }
+/* 
+            .screen {
+                background-image: url("animal.jpg.avif");
+                background-size: "cover";
+                background-repeat: "no-repeat";
+            }
+
+            .background {
+                background-image: url("animal.jpg.avif");
+                background-size: "cover";
+                background-repeat: "no-repeat";
+            } */
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <img src="flower.jpg" id="bgImg" height="124px" width="194px">
+
+        </div>
+        <script src="mouseOver.js"></script>
+        <script>
+                        let contain = document.querySelector(".container");
+                            console.log(contain);
+                            let body = document.querySelector("body");
+                            let img = document.querySelector("#bgImg");
+                            console.log(img);
+                            img.addEventListener("mouseover", () => {
+                    // logic to change background
+                            body.style.backgroundImage = "url('animal.jpg.avif')";
+                            body.style.backgroundSize = "cover";
+                            body.style.backgroundRepeat = "no-repeat";
+            });
+
+        </script>
+    </body>
+
+</html>
